@@ -12,3 +12,13 @@ Pas de fioritures, pas de piège, pas de bonne ou mauvaise façon de faire, ce s
 Have fun !
 
 **Si tu rencontres un problème n'hésite pas à créer une issue sur le repo que tu as fork et on répondra aussi vite que possible !**
+
+## Solution:   Backend
+First step setup Docker environment
+```shell
+docker build -t person-managment  .
+```
+then
+```shell
+docker run -d --name person-managment-docker -p 27017:27017   person-managment-docker 
+```
