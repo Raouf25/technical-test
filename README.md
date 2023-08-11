@@ -22,3 +22,30 @@ then
 ```shell
 docker run -d --name person-managment-docker -p 27017:27017   person-managment-docker 
 ```
+Once you've MongoDB up, you can run the application.
+
+For test you can run the following curls: 
+```shell
+curl --location 'localhost:8080/persons/list-upsert' \
+--header 'Content-Type: application/json' \
+--data-raw '[
+    {
+        "id": "64d63a602f51bc2abf5bc08f",
+        "name": " tata 20 ",
+        "email": "toto.titi20@gmail.com",
+        "courseList": null,
+        "gpa": 0.0
+    },
+    {
+        "id": "64d63ae22f51bc2b28c11a3e",
+        "name": " tata 22",
+        "email": "toto.titi 24 @gmail.com",
+        "courseList": null,
+        "gpa": 0.0
+    }
+]'
+```
+or 
+```shell
+curl --location 'localhost:8080/persons/'
+```
