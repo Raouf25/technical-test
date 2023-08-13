@@ -13,7 +13,8 @@ Have fun !
 
 **Si tu rencontres un problème n'hésite pas à créer une issue sur le repo que tu as fork et on répondra aussi vite que possible !**
 
-## Solution:   Backend
+## Solution:   
+### Getting Started Backend
 First step setup Docker environment
 ```shell
 docker build -t person-managment  .
@@ -49,3 +50,16 @@ or
 ```shell
 curl --location 'localhost:8080/persons/'
 ```
+
+### Getting Started Frontend
+To get started with this front project (after running backend), install the necessary dependencies:
+``` shell 
+npm install
+```
+
+### Development
+Once the dependencies are installed, you can start the development server:
+```
+npm run serve
+```
+This will start the development server at http://localhost:8081.
