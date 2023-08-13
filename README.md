@@ -20,7 +20,7 @@ docker build -t person-managment  .
 ```
 then
 ```shell
-docker run -d --name person-managment-docker -p 27017:27017   person-managment-docker 
+docker run -d --name person-managment -p 27017:27017   person-managment 
 ```
 Once you've MongoDB up, you can run the application.
 
